@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker University</title>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- 1. Название учебной информационной системы -->
+        <h1>Docker University</h1>
+        
+        <!-- 2. ФИО и группа студента -->
+        <p class="student-info">Студент: <strong>Жаркова Виктория</strong> | Группа: <strong>4-МД-8</strong></p>
+        
+        <p>Сайт работает внутри Docker-контейнера.</p>
+
+        <!-- 4. РАЗДЕЛ: Возможности системы из трёх пунктов (Добавлен) -->
+        <h2>Возможности системы</h2>
+        <ul>
+            <li>Управление учебными материалами в изолированной среде</li>
+            <li>Быстрое развертывание веб-сервера Nginx с Alpine Linux</li>
+            <li>Автоматическая сборка контейнеров и масштабирование</li>
+        </ul>
+
+        <h2>Информация о проекте</h2>
+        <p>Веб-сервер: Nginx</p>
+        <p>Контейнеризация: Docker</p>
+        <p>Операционная система контейнера: Alpine Linux</p>
+        <!-- 3. Версия 3.0 -->
+        <p>Версия приложения: <strong>3.0</strong></p>
+
+        <!-- 5. Кнопка -->
+        <button onclick="showMessage()">Проверить сайт</button>
+        <p id="result"></p>
+
+        <!-- 7. Надпись Опубликовано на Firebase Hosting (Точное совпадение) -->
+        <footer class="footer">
+            <p>Опубликовано на Firebase Hosting</p>
+        </footer>
+    </main>
+
+    <script>
+        function showMessage() {
+            document.getElementById("result").innerText =
+                "Frontend успешно работает внутри контейнера!";
+        }
+    </script>
+</body>
+</html>
